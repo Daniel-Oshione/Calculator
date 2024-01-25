@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calc.css">
+</head>
+<body>
+    <img src="./imgfolder/christmas-hat-png-19606.png" alt="">
+    <div class="container">
+    <div class="calc">
+        <form>
+        <div>
+        <input type="text" style="width: 250px; display: flex; justify-content: flex-end;color: antiquewhite; font-size: 25px;text-align: right;" name="calc" readonly>
+        <div>
+        <input type="button" value="AC" onclick="calc.value =''">
+        <input type="button" value="DEL" onclick="calc.value = calc.value.toString().slice(0,-1)">
+        <input type="button" value="." onclick="calc.value +='.'">
+        <input type="button" value="/" class="ops"onclick="calc.value +='/'">
+        </div>
+        <div>
+        <input type="button" value="0" onclick="calc.value +='0'">
+        <input type="button" value="1" onclick="calc.value +='1'">
+        <input type="button" value="2" onclick="calc.value +='2'">
+        <input type="button" value="*" class="ops" onclick="calc.value +='*'">
+        </div>
+        <div>
+        <input type="button" value="3" onclick="calc.value +='3'">
+        <input type="button" value="4" onclick="calc.value +='4'">
+        <input type="button" value="5" onclick="calc.value +='5'">
+        <input type="button" value="+" class="ops" onclick="calc.value +='+'">
+        </div>
+        <div>
+        <input type="button" value="6" onclick ="calc.value +='6'">
+        <input type="button" value="7" onclick="calc.value +='7'">
+        <input type="button" value="8" onclick="calc.value +='8'">
+        <input type="button" value="-" class="ops" onclick="calc.value +='-'">
+        </div>
+        <div>
+        <input type="button" value="9" onclick="calc.value +='9'">
+        <input type="button" value="00" class="ops" onclick="calc.value +='00'">
+        <input type="button" value="=" class="equal" class="ops" onclick="calc.value = eval(calc.value)">
+        </div>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
